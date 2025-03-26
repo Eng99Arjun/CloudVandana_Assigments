@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #312c48;
+            font-family: Montserrat, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        h6 {
+            margin: 5px 0;
+            text-transform: uppercase;
+            color: #FEBB0B;
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .card-container {
+            background-color: #231E39;
+            border: 1px solid #02899C;
+            border-radius: 5px;
+            box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+            color: #B3B8CD;
+            padding: 20px;
+            position: relative;
+            width: 90%;
+            max-width: 350px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out; /* Added transition for hover effect */
+        }
+
+        .card-container:hover {
+            transform: scale(1.05); /* Hover effect: slightly scale up the card */
+        }
+
+        .card-container .bio-tag {
+            color: #231E39;
+            background-color: #FEBB0B;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 3px 7px;
+            position: absolute;
+            margin: auto;
+        }
+
+        .card-container .partition {
+            background-color: #FEBB0B;
+            height: 2px;
+            margin: 0 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-container .round {
+            width: 100px;
+            height: 100px;
+            border: 0.2px solid #03BFCB;
+            border-radius: 50%;
+            padding: 7px;
+        }
+
+   
+
+        .card-container .bio {
+            padding: 0 15px;
+            text-align: justify;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #f0f2f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #666;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for social icons */
+        }
+
+        .social-icons a:hover {
+            background-color: #007bff;
+            color: white; /* Changed hover color to white for better contrast */
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                padding: 1.5rem;
+            }
+
+            .round {
+                width: 80px;
+                height: 80px;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            h6 {
+                font-size: 0.9rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            .social-icons a {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-container {
+                padding: 1rem;
+            }
+
+            .round {
+                width: 60px;
+                height: 60px;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            h6 {
+                font-size: 0.8rem;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+
+            .social-icons a {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="card-container">
+
+        <img class="round" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" />
+        <h3>Dhananjay Maurya</h3>
+        <h6>Software Engineer</h6>
+        <br>
+        <div class="bio">
+            <div class="bio-tag">Bio</div>
+            <br>
+            <p>Hi, I am a software engineer. I love to design and develop web applications. I have been working in this field for 5 years. I have worked on various technologies like HTML, CSS, JavaScript, React, Node, etc.</p>
+        </div>
+        <div class="partition"></div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+    </div>
+</body>
+</html>

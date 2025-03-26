@@ -24,4 +24,20 @@ The card is designed to be centered on the page and adapt seamlessly to differen
 
 Below is a preview of the profile card:
 
-![Profile Card Screenshot](assets/profileCard.png)  
+![Profile Card Screenshot](/Assignment1/assets/profileCard.png)  
+
+---
+
+## Assignment 2 - Checking for Anagrams using Java
+
+### Description
+This program checks if two strings are anagrams. It removes whitespaces, handles case insensitivity, and uses a `HashMap` for efficient character counting to compare the two strings.
+
+### Features
+- **Whitespace Handling**: The program ignores spaces in both strings for accurate comparison.
+- **Case Insensitivity**: Handles uppercase and lowercase letters as equal.
+- **HashMap Utilization**: Efficient character counting to ensure accuracy.
+- **Validation**: Returns `true` if the strings are anagrams, otherwise `false`.
+
+![Program Output Screenshot2](/Assignment2/assets/Screenshot1.png)  
+![Program Output Screenshot2](/Assignment2/assets/Screenshot2.png)  

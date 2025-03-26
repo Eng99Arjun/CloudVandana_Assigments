@@ -1,6 +1,8 @@
-# Responsive Profile Card (Assignment 1)
+# Coding Assignment – Associate Software Engineer
 
-This repository contains the code for **Assignment 1**: designing a responsive profile card using HTML and CSS. The profile card includes the following elements:
+This repository contains the code for **Assignments**: 
+
+## Assignment 1- Designing a responsive profile card using HTML and CSS. The profile card includes the following elements:
 
 - A profile picture
 - Name and designation

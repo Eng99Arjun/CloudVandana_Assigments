@@ -28,7 +28,7 @@ Below is a preview of the profile card:
 
 ---
 
-## Assignment 2 - Checking for Anagrams using Java
+## Assignment 2 - String Manipulation - Anagram Check
 
 ### Description
 This program checks if two strings are anagrams. It removes whitespaces, handles case insensitivity, and uses a `HashMap` for efficient character counting to compare the two strings.
@@ -41,3 +41,28 @@ This program checks if two strings are anagrams. It removes whitespaces, handles
 
 ![Program Output Screenshot2](/Assignment2/assets/Screenshot1.png)  
 ![Program Output Screenshot2](/Assignment2/assets/Screenshot2.png)  
+
+---
+
+## Assignment 3 - Object-Oriented Programming - Employee Management System
+
+### Description
+This Java program showcases the management of employee records using object-oriented programming principles. It includes enhanced features such as validation for employee fields, error handling, and consistent output formatting using `String.format`.
+
+### Features
+- **Validation**:
+    - Employee ID must be positive.
+    - Name cannot be null or empty.
+    - Salary must be positive.
+- **Error Handling**:
+    - Gracefully manages invalid input with clear error messages.
+- **Readable Output**:
+    - Uses `String.format()` for clean and consistent display of employee details.
+- **Encapsulation**:
+    - Protects and manages employee data effectively within the `Employee` class.
+- **Dynamic Data Storage**:
+    - Uses `ArrayList` for flexible storage and management of employee records.
+
+
+### Example Output
+![Program Output Screenshot2](/Assignment3/assets/Employee.png)

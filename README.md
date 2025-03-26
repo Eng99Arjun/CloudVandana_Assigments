@@ -11,7 +11,7 @@ This repository contains the code for **Assignments**:
 
 The card is designed to be centered on the page and adapt seamlessly to different screen sizes. CSS animations are applied to create an engaging hover effect.
 
-## Features
+### Features
 
 - **Responsive Design**: The card adjusts its layout beautifully across various devices and screen sizes.
 - **Profile Picture**: A circular profile image for a clean and professional look.
@@ -20,7 +20,7 @@ The card is designed to be centered on the page and adapt seamlessly to differen
 - **Social Media Icons**: Icons linking to your social media profiles.
 - **CSS Animations**: A smooth hover effect to enhance user interaction.
 
-## Screenshots
+### Screenshots
 
 Below is a preview of the profile card:
 

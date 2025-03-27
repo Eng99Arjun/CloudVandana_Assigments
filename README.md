@@ -86,8 +86,8 @@ This project is a responsive To-Do List application built using HTML, CSS, and J
 ### Example
 Below is an example of how the application looks when in use:
 
-![To-Do List Screenshot](assets/Todo.png)
+![To-Do List Screenshot](/Assignment4/assets/Todo.png)
 
 ---
 
-## Folder Structure
+

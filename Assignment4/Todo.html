@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To-Do List</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  .input-area {
+    display: flex;
+    justify-content: space-between;
+  }
+  input[type="text"] {
+    width: calc(100% - 95px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  li {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+  .remove-btn {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .remove-btn:hover {
+    background-color: #c82333;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-area">
+      <input type="text" id="newTask" placeholder="Add new task..." aria-label="New Task">
+      <button id="addTaskBtn">Add</button>
+    </div>
+    <ul id="taskList" role="list">
+    </ul>
+  </div>
+
+  <script>
+    const taskInput = document.getElementById('newTask');
+    const addTaskButton = document.getElementById('addTaskBtn');
+    const taskList = document.getElementById('taskList');
+
+    // Loading tasks from local storage on page load
+    window.addEventListener('load', loadTasks);
+
+    addTaskButton.addEventListener('click', addTask);
+
+    function addTask() {
+      const taskText = taskInput.value.trim();
+      if (taskText === '') {
+        alert('Please enter a task.');
+        return;
+      }
+
+      const listItem = createTaskElement(taskText);
+      taskList.appendChild(listItem);
+
+      saveTasks(); // Saving tasks to local storage
+      taskInput.value = ''; // Clearing the input field
+    }
+
+    function createTaskElement(taskText) {
+      const listItem = document.createElement('li');
+      const taskSpan = document.createElement('span');
+      taskSpan.textContent = taskText;
+
+      const removeButton = document.createElement('button');
+      removeButton.textContent = 'Remove';
+      removeButton.classList.add('remove-btn');
+      removeButton.addEventListener('click', removeTask);
+
+      listItem.appendChild(taskSpan);
+      listItem.appendChild(removeButton);
+
+      return listItem;
+    }
+
+    function removeTask(event) {
+      const listItemToRemove = event.target.parentNode;
+      taskList.removeChild(listItemToRemove);
+      saveTasks(); // Updating local storage
+    }
+
+    function saveTasks() {
+      const tasks = [];
+      taskList.querySelectorAll('li').forEach((listItem) => {
+        const taskSpan = listItem.querySelector('span');
+        tasks.push(taskSpan.textContent);
+      });
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+
+    function loadTasks() {
+      const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+      tasks.forEach((task) => {
+        const listItem = createTaskElement(task);
+        taskList.appendChild(listItem);
+      });
+    }
+
+    // Adding tasks by pressing Enter key
+    taskInput.addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        addTask();
+      }
+    });
+  </script>
+</body>
+</html>

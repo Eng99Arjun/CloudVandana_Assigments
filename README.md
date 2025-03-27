@@ -66,3 +66,28 @@ This Java program showcases the management of employee records using object-orie
 
 ### Example Output
 ![Program Output Screenshot2](/Assignment3/assets/Employee.png)
+
+---
+
+## Assignment 4 - To-Do List Application Using HTML, CSS, and JavaScript
+
+### Description
+This project is a responsive To-Do List application built using HTML, CSS, and JavaScript. It allows users to manage their tasks interactively with features such as adding, removing tasks, and persisting tasks using the browser's local storage.
+
+### Features
+- **Add Tasks**: Users can add new tasks via the input field and a dedicated button or by pressing the `Enter` key.
+- **Remove Tasks**: Each task has a "Remove" button to delete it from the list.
+- **Local Storage Integration**: Tasks persist between sessions by saving and loading them from the browser's local storage.
+- **Responsive Design**: The application is styled to work on different screen sizes.
+- **Interactive UI**:
+  - Smooth hover effects on buttons.
+  - Clean and modern layout with enhanced user experience.
+
+### Example
+Below is an example of how the application looks when in use:
+
+![To-Do List Screenshot](assets/Todo.png)
+
+---
+
+## Folder Structure

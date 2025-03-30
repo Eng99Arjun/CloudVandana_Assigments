@@ -67,42 +67,27 @@ This Java program showcases the management of employee records using object-orie
 ### Example Output
 ![Program Output Screenshot2](/Assignment3/assets/Employee.png)
 
+---
 
-## Assignment 5: Responsive Image Slider
+## Assignment 4 - To-Do List Application Using HTML, CSS, and JavaScript
 
-### Project Overview
-This project demonstrates the creation of a responsive image slider using **HTML**, **CSS**, and **JavaScript**. It allows users to navigate through a series of images interactively, with functional **Previous** and **Next** buttons.
+### Description
+This project is a responsive To-Do List application built using HTML, CSS, and JavaScript. It allows users to manage their tasks interactively with features such as adding, removing tasks, and persisting tasks using the browser's local storage.
 
 ### Features
-- Responsive design: Optimized for various screen sizes.
-- Smooth navigation: Easily browse images using buttons.
-- Accessibility: Button controls positioned for intuitive interaction.
+- **Add Tasks**: Users can add new tasks via the input field and a dedicated button or by pressing the `Enter` key.
+- **Remove Tasks**: Each task has a "Remove" button to delete it from the list.
+- **Local Storage Integration**: Tasks persist between sessions by saving and loading them from the browser's local storage.
+- **Responsive Design**: The application is styled to work on different screen sizes.
+- **Interactive UI**:
+  - Smooth hover effects on buttons.
+  - Clean and modern layout with enhanced user experience.
 
-### Structure
-#### 1. **HTML**
-   - Defines the layout of the slider.
-   - Includes **slider-container**, image elements, and navigation buttons.
+### Example
+Below is an example of how the application looks when in use:
 
-#### 2. **CSS**
-   - Implements the styling for layout and animations.
-   - Positions buttons for seamless interaction.
+![To-Do List Screenshot](/Assignment4/assets/Todo.png)
 
-#### 3. **JavaScript**
-   - Adds interactivity to navigate between images.
-   - Handles image display logic and circular navigation.
-
-### How to Use
-1. Clone the repository to your local system.
-2. Place your images in the `assets/` folder.
-3. Open the `index.html` file in your browser to view the image slider.
-
-### Installation
-No specific installation is required. All features run locally with the provided files.
-
-### Code Breakdown
-#### JavaScript Functions
-- **showImage(index):** Displays the image corresponding to the provided index.
-- **prevImage():** Navigates to the previous image in the slider.
-- **nextImage():** Navigates to the next image in the slider.
+---
 
 

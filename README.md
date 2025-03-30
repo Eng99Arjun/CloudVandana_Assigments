@@ -90,4 +90,41 @@ Below is an example of how the application looks when in use:
 
 ---
 
+# Assignment 5: Responsive Image Slider
+
+## Project Overview
+This project demonstrates the creation of a responsive image slider using **HTML**, **CSS**, and **JavaScript**. It allows users to navigate through a series of images interactively, with functional **Previous** and **Next** buttons.
+
+## Features
+- Responsive design: Optimized for various screen sizes.
+- Smooth navigation: Easily browse images using buttons.
+- Accessibility: Button controls positioned for intuitive interaction.
+
+## Structure
+### 1. **HTML**
+   - Defines the layout of the slider.
+   - Includes **slider-container**, image elements, and navigation buttons.
+
+### 2. **CSS**
+   - Implements the styling for layout and animations.
+   - Positions buttons for seamless interaction.
+
+### 3. **JavaScript**
+   - Adds interactivity to navigate between images.
+   - Handles image display logic and circular navigation.
+
+## How to Use
+1. Clone the repository to your local system.
+2. Place your images in the `assets/` folder.
+3. Open the `index.html` file in your browser to view the image slider.
+
+## Installation
+No specific installation is required. All features run locally with the provided files.
+
+## Code Breakdown
+### JavaScript Functions
+- **showImage(index):** Displays the image corresponding to the provided index.
+- **prevImage():** Navigates to the previous image in the slider.
+- **nextImage():** Navigates to the next image in the slider.
+
 
